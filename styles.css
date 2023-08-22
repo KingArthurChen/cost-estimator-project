@@ -1,0 +1,130 @@
+body {
+    background-color: rgb(240, 210, 244);
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: rgb(135, 57, 174);
+}
+
+.container {
+    background-color: white;
+    width: 100%;
+    max-width: 900px;
+    border-radius: 20px;
+    height: 90vh;
+}
+
+header {
+    position: relative;
+}
+
+.tab-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    padding: 16px 16px 16px 16px;
+}
+
+.tab-wrapper p {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: rgb(240, 210, 244);
+    transition: color 1s;
+}
+
+.tab-wrapper p:hover {
+    cursor: pointer;
+    color: rgb(135, 57, 174);
+}
+
+
+.tab-wrapper p.active {
+    color: rgb(135, 57, 174);
+}
+
+.line {
+    width: 100%;
+    background-color: rgb(217, 217, 217);
+    height: 5px;
+    position: absolute;
+    bottom: 10px
+}
+
+.tab-line {
+    margin-left: -14%;
+    width: 20%;
+    height: 5px;
+    background-color: rgb(135, 57, 174);
+    position: absolute;
+    bottom: 10px;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.toggle-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 24px;
+}
+
+.toggle-wrapper img {
+    height: 64px;
+    padding: 0 16px 0 16px;
+}
+
+.toggle {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 16px 0 16px;
+    background-color: rgb(135, 57, 174);
+    border-radius: 50px;
+    align-items: center;
+
+}
+
+.toggle p {
+    padding: 0 16px 0 16px;
+    font-weight: bold;
+    color: white;
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+.toggle p.active {
+    color: rgb(135, 57, 174);
+    background-color: white;
+    border: 4px solid white;
+    padding: 4px 16px;
+    border-radius: 50px;
+}
+
+.session-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(240, 210, 244);
+    border-radius: 20px;
+    margin: 5% 20%;
+}
+
+.session-container p {
+    margin-top: 50px;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.session-container h2 {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 4em;
+    color: rgb(135, 57, 174)
+}
