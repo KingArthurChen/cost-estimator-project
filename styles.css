@@ -16,7 +16,7 @@ h1 {
     width: 100%;
     max-width: 900px;
     border-radius: 20px;
-    height: 90vh;
+    height: 100%;
 }
 
 header {
@@ -31,7 +31,7 @@ header {
 }
 
 .tab-wrapper p {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 1.5em;
     color: rgb(240, 210, 244);
     transition: color 1s;
@@ -64,6 +64,7 @@ header {
     bottom: 10px;
     z-index: 1;
     border-radius: 20px;
+    left: 340px;
 }
 
 .toggle-wrapper {
@@ -91,7 +92,7 @@ header {
 
 .toggle p {
     padding: 0 16px 0 16px;
-    font-weight: bold;
+    font-weight: 700;
     color: white;
     font-size: 1.1em;
     text-transform: uppercase;
@@ -118,7 +119,7 @@ header {
 .session-container p {
     margin-top: 50px;
     margin-bottom: 0;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 1.2em;
 }
 
@@ -128,3 +129,87 @@ header {
     font-size: 4em;
     color: rgb(135, 57, 174)
 }
+
+.container p {
+    padding: 0 64px 16px 64px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.slider {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.slider-background {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 90%;
+    background-color: rgb(232, 232, 232);
+    height: 20px;
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+}
+
+.slider-gradient {
+    display: flex;
+    justify-content: end;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 35%, rgba(145,0,255,1) 100%);
+    border: 0 solid rgb(232, 232, 232);
+    border-radius: 20px;
+    height: 20px;
+    width: 36%;
+}
+
+.slider-toggle {
+    background-color: rgba(145,0,255,1);
+    border: 1px solid white;
+    border-radius: 50px;
+    width: 6%;
+    transform: scale(2.0)
+}
+
+.slider-toggle:hover {
+    cursor: pointer;
+}
+
+.slider-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 91%;
+    font-size: 16px;
+    font-weight: 700;
+    color: grey;
+    list-style: none;
+}
+
+
+.card-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(240, 210, 244);
+    border-radius: 20px;
+}
+
+.special-card-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-top {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 35%, rgba(145,0,255,1) 100%);
+    color: white;
+}
+
