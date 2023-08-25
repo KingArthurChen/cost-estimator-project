@@ -117,9 +117,10 @@ header {
 }
 
 .session-container p {
+    text-transform: uppercase;
     margin-top: 50px;
     margin-bottom: 0;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 1.2em;
 }
 
@@ -130,10 +131,10 @@ header {
     color: rgb(135, 57, 174)
 }
 
-.container p {
+.container-text {
     padding: 0 64px 16px 64px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .slider {
@@ -184,6 +185,7 @@ header {
     font-weight: 700;
     color: grey;
     list-style: none;
+    padding-bottom: 16px;;
 }
 
 
@@ -201,15 +203,74 @@ header {
     justify-content: center;
     background-color: rgb(240, 210, 244);
     border-radius: 20px;
+    z-index: 1;
+    padding: 16px; 32px 0 32px;
+}
+
+.card-wrapper h2 {
+    color: rgb(135, 57, 174);
+    margin: 8px;
+}
+
+.card-wrapper h1 {
+    color: rgb(0,0,0);
+    margin: 0;
+}
+
+.line-break {
+    height: 2px;
+    width: 40%;
+    background-color: rgb(152, 138, 138);
+    margin-top: 16px;
+}
+
+.card-wrapper p {
+    color: rgb(135, 57, 174);
+    font-weight: 800;
+    text-align: center;
+    width: 80%;
+    margin: 16px 0 0 0;
+}
+
+.card-wrapper button {
+    color: white;
+    background-color: rgb(135, 57, 174);
+    border: 0;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.25rem;
+    padding: 16px;
+    margin: 16px;
+}
+
+.card-wrapper button:hover {
+    cursor: pointer;
 }
 
 .special-card-wrapper {
     display: flex;
     flex-direction: column;
+    position: relative;
+    bottom: 28px;
+}
+
+.special-card-wrapper .card-wrapper {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
 .card-top {
+    padding: 0 8px 8px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
     background: linear-gradient(90deg, rgba(2,0,36,1) 35%, rgba(145,0,255,1) 100%);
     color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    position: relative;
+    top: 15px;
+    font-weight: 600;
 }
 
