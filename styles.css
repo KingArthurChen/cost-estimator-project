@@ -204,7 +204,7 @@ header {
     background-color: rgb(240, 210, 244);
     border-radius: 20px;
     z-index: 1;
-    padding: 16px; 32px 0 32px;
+    padding: 16px 32px 0 32px;
 }
 
 .card-wrapper h2 {
